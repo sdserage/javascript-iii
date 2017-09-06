@@ -37,7 +37,7 @@ let postTaxPrices = prices.map(element => element * 1.07);
 
 const populations = [8175133, 3792621, 2695598, 2100263]
 
-let totalPopulation //  = populations.reduce(/* Provide Your Callback Here */)
+let totalPopulation   = populations.reduce((sum,elem) => sum += elem);
 
 // Now we're going to ramp up these a little bit.  Instead of just arrays of numbers
 // We are going to have array of objects that we want to use map filter and reduce with
