@@ -149,7 +149,14 @@ for(key in deleteTheBigNumbers) {
 
 // CODE HERE
 
-
+var startsWithK = obj => {
+  for(key in obj){
+    if(key.substring(0,1)==='k'){
+      delete obj[key];
+    }
+  }
+  return obj;
+}
 
 // ========================
 
