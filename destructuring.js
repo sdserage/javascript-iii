@@ -75,3 +75,5 @@ var largeNumbers = ({first, second, third}) => first < second ? (first < third ?
 // Write a function called numberGroups that will take a destructured object as it's parameter. The object properties will be named a, b, and c and their values will be arrays of numbers. Find the longest array and return that array.
 
   // CODE HERE
+
+var numberGroups = ({a, b, c}) => a.length > b.length ? (a.length > c.length ? a : c) : b;
