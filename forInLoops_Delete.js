@@ -35,7 +35,7 @@ function showValues( obj ) {
   // CODE HERE
   var str ='';
   for(let key in obj){
-    if(str.length ===0){
+    if(str.length ===0){ //Not needed
       str = obj[key];
     } else {
       str += obj[key];
@@ -92,22 +92,23 @@ var secrets = obj => {
   return str;
 }
 
+
 // ========================
 
 
 // Sometimes it's needed to delete object properties. All you need is the word delete before a reference to the object property value. Uncomment the example below to see a for in loop deleting all the properties inside an object.
 
-// var deleteAllThethings = {
-//   one: 1,
-//   two: 2,
-//   three: 3
-// }
+var deleteAllThethings = {
+  one: 1,
+  two: 2,
+  three: 3
+}
 
-// for(var key in deleteAllThethings) {
-//   delete deleteAllThethings[key]
-// }
+for(var key in deleteAllThethings) {
+  delete deleteAllThethings[key]
+}
 
-// console.log(deleteAllThethings)
+console.log(deleteAllThethings)
 
 // ========================
 
@@ -116,7 +117,10 @@ var secrets = obj => {
 
 // CODE HERE
 
-
+var removePassword = obj => {
+  delete obj.password;
+  return obj;
+}
 
 // ========================
 
