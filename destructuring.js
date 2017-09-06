@@ -67,6 +67,7 @@ var ingredients = obj => {
 
   // CODE HERE
 
+var largeNumbers = ({first, second, third}) => first < second ? (first < third ? first : third): second;
 
 // ========================
 
