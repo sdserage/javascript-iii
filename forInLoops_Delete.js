@@ -82,6 +82,15 @@ var double = obj => {
 
 // CODE HERE
 
+var secrets = obj => {
+  var str = "";
+  for(key in obj){
+    if(key.substring(0,2) === "sh") {
+      str += obj[key];
+    }
+  }
+  return str;
+}
 
 // ========================
 
