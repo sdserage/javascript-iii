@@ -47,6 +47,12 @@ var totalPopulation = obj => {
 
   // CODE HERE
 
+var ingredients = obj => {
+  var arr = [];
+  var {carb, fat, protein} = obj;
+  arr.push(carb,fat,protein);
+  return arr;
+}
 
 // ========================
 
