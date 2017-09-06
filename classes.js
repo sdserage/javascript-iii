@@ -22,8 +22,18 @@ Each employee can:
 call your class Employee and receive all the data in the constructor in the order listed
 */
 
-
-
+class Employee {
+  constructor(first_name, last_name, email, age){
+    // this = {}
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.email = email;
+    this.age = age;
+  }
+  makeWidget() {
+    return this.first_name + " " + this.last_name + " Widget";
+  }
+}
 /*
 
 Next, make a manager for Widget Co.
