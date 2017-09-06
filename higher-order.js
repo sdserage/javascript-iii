@@ -40,7 +40,7 @@ const populations = [8175133, 3792621, 2695598, 2100263]
 let totalPopulation   = populations.reduce((sum,elem) => sum += elem);
 
 // Now we're going to ramp up these a little bit.  Instead of just arrays of numbers
-// We are going to have array of objects that we want to use map filter and reduce with
+// We are going to have array of objects that we want to use map, filter, and reduce with
 
 // Below we have an array of totally unique monsters we want to use a filter
 // function to return only the monsters that have a CP of over 200
@@ -55,7 +55,7 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 {"monster":"Sandmush","CP":262},{"monster":"Sandmush","CP":25},{"monster":"Charaflier","CP":215},
 {"monster":"Ponylopse","CP":125},{"monster":"Bulbabunny","CP":178}]
 
-let myStrongest // Your code here
+let myStrongest = monstersInYourPocket.filter(monPoke => monPoke.CP > 200);// Your code here
 
 // Below we have an array of orders.  but they all have different tax rates.
 // We want to make a new array of total prices.
