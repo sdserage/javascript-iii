@@ -75,7 +75,7 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 
 // Code here
 
-// Could be easier with .include();
+// Could be easier with .include(), wanted to make sure I understood how to do it.
 var removeDuplicates = () => {
   var updatedArray = [];
   var flag;
@@ -123,8 +123,8 @@ var grumpyActivity;
 var fluffy2ndFriend;
 
 
-
-
+grumpyActivity = cat.catFriends[0].activities[1]  ;
+fluffy2ndFriend = cat.catFriends[1].name;
 
 
 
@@ -159,7 +159,11 @@ var myCar = {
 
 // Code here
 
-
+var recordCleaner = () => {
+  for(let i = 0; i < myCar.accidents.length; i++){
+    myCar.accidents[i].atFaultForAccident = false;
+  }
+}
 
 
 
