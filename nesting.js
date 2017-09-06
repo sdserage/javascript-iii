@@ -75,7 +75,23 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 
 // Code here
 
-
+// Could be easier with .include();
+var removeDuplicates = () => {
+  var updatedArray = [];
+  var flag;
+  for(let i = 0; i < workplaceAccidents.length; i++){
+    flag = false;
+    for(let j = 0; j < updatedArray.length; j++){
+      if(workplaceAccidents[i] === updatedArray [j]){
+        flag = true;
+      }
+    }
+    if(!flag){
+      updatedArray.push(workplaceAccidents[i]);
+    }
+  }
+  return updatedArray;
+}
 
 
 
