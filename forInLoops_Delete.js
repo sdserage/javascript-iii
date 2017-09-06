@@ -165,3 +165,12 @@ var startsWithK = obj => {
 // (hint: the method includes() may be of use...)
 
 // CODE HERE
+
+var hiddenTreasure = obj => {
+  for(let key in obj) {
+    if(!obj[key].includes("treasure")){
+      delete obj[key];
+    }
+  }
+  return obj;
+}
