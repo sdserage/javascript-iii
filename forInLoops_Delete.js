@@ -68,7 +68,12 @@ var greaterThan10 = obj => {
 
 // CODE HERE
 
-
+var double = obj => {
+  for(key in obj){
+    obj[key] *= 2;
+  }
+  return obj;
+}
 
 // ========================
 
