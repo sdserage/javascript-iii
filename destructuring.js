@@ -34,6 +34,10 @@ function greeting( obj ) {
 
   // CODE HERE
 
+var totalPopulation = obj => {
+  var {utah, california, texas, arizona} = obj;
+  return utah + california + texas + arizona;
+}
 
 
 // ========================
