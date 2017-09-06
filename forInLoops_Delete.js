@@ -52,7 +52,14 @@ function showValues( obj ) {
 
 // CODE HERE
 
-
+var greaterThan10 = obj => {
+  for(key in obj){
+    if(obj[key] > 10){
+      obj[key] = 0;
+    }
+  }
+  return obj;
+}
 
 // ========================
 
