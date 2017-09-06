@@ -51,7 +51,24 @@ call your class Manager
 
 */
 
-
+class Manager {
+  constructor(first_name, last_name, email, age){
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.email = email;
+    this.age = age;
+    this.reports = [];
+  }
+  makeWidget() {
+    return this.first_name + " " + this.last_name + " Widget";
+  }
+  hire(employee){
+    this.reports.push(employee);
+  }
+  fire(index){
+    this.reports.splice(index, 1);
+  }
+}
 
 
 
